@@ -23,6 +23,35 @@
     </nav>
   </header>
   <main>
+
+    <section id="Thumbnails-and-Alternative-Sizes">
+      <a href="images/myself.png">
+        <picture>
+          <source media="(max-width: 500px)" srcset="images/thumbnail_150px.png">
+          <source media="(min-width: 501px)" srcset="images/thumbnail_300px.png">
+          <img src="images/thumbnail_300px.png" alt="Thumbnail-of-Myself">
+        </picture>
+      </a>
+    </section>
+
+    <section id="embedding-external-content">
+      <h3>Public Domain Audiobook</h3>
+      <audio controls>
+        <source src="https://dn721605.ca.archive.org/0/items/blackcat0501_2505_librivox/blackcat0501oct1899_1_various_128kb.mp3" type="audio/mp3">
+        <a href="https://dn721605.ca.archive.org/0/items/blackcat0501_2505_librivox/blackcat0501oct1899_1_various_128kb.mp3">Download the Audio</a>
+      </audio>
+
+      <h3>YouTube Video</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OREepiokQTo?si=An2SGGJAnAzjeu0U"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+
+
+    </section>
+
     <section id="BIO">
       <h1>Welcome to Shree's Website</h1>
       <h4>About Nepal</h4>
@@ -35,8 +64,9 @@
         <li>Reading</li>
         <li>Hiking and travelling</li>
       </ul>
+
     </section>
-    <section id="image">
+    <section id="Working-with-Figures">
       <figure>
         <a href="https://en.wikipedia.org/wiki/File:Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg" target="_blank">
           <img src="images/logo.jpg" alt="Mount Everest" style="width: 300px; height: 200px;">
@@ -65,6 +95,13 @@
       <cite> &mdash; by <span class="author"> Unknown </span></cite>
     </blockquote>
     <p>&copy; 2025 <a href="mailto:acharyashreekrishna96@gmail.com?subject=Message%20from%20CSD112%20Website">Shree Krishna Acharya</a></p>
+    <section id="Working-with-Image-Support">
+      <picture>
+        <source srcset="images/sc-logo/sc-logo/sc-logo.svg" width=70px>
+        <img src="images/sc-logo/sc-logo/sc-logo.svg" alt="Sault College logo"
+             srcset="images/sc-logo/sc-logo/sc-logo.png 1x, images/sc-logo/sc-logo/sc-logo_105.png 1.5x, images/sc-logo/sc-logo/sc-logo_140.png 2x">
+      </picture>
+    </section>
   </footer>
   <a href="#top" title="Back to top"> ◤ </a>
   </div>
