@@ -1,0 +1,144 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.width-wrap {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 3em;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    color: #002366;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+header nav a {
+    color: #cc6600;
+    border-top: 4px solid transparent;
+    display: inline-block;
+    padding: 1em 1em 0.5em 1em;
+}
+
+header nav a:hover {
+    border-top-color: #cc6600;
+}
+
+header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+header nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    list-style: none;
+}
+label {
+    display: block;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+}
+input[type="submit"] {
+    border: none;
+    padding: 1em 3em;
+    color: white;
+    background-color: #007bff;
+}
+input:invalid,
+textarea:invalid,
+select:invalid{
+    background-color: red;
+}
+
+footer p {
+    width: min(50vw, 890px);
+    min-width: 300px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-bottom: 3px dotted #999;
+}
+
+dt::after {
+    content: ":";
+}
+
+::selection {
+    background-color: #ffff99;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.3em 1em;
+}
+
+thead th,
+tfoot th,
+tfoot td,
+tbody th {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+tbody td {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+tbody tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+label {
+    display: block;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 1em 3em;
+    background-color: #002366;
+    color: white;
+}
+
+input:invalid,
+textarea:invalid {
+    background-color: #ffeeee;
+}

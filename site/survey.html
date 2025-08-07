@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 <div class="width-wrap">
@@ -19,6 +21,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="glossary.html">Glossary</a></li>
                 <li><a href="links.html">Links</a></li>
+                <li><a href="survey.html">Survey</a></li>
             </ul>
         </nav>
     </header>
@@ -27,25 +30,25 @@
             <h1>Survey</h1>
             <form action="https://formspree.io/f/manjorld" method="Post">
                 <p>
-                    <label for="name">What is your name?</label>
+                    <label for="name">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
                     <input type="text" id="name" name="name_field" required>
                 </p>
                 <p>
-                    <label for="email">What is your email?</label>
-                    <input type="email" id="email" name="" required>
+                    <label for="email">What is your email? <abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="email" id="email" name="email_field" required>
                 </p>
                 <p>
-                    <label for="name">Which whole number is best?</label>
-                    <input type="number" id="number" name="best_whole_number" min="0" required>
+                    <label for="number">Which whole number is best?</label>
+                    <input type="number" id="number" name="best_whole_number" step="1" aria-valuemin="0" min="0">
                 </p>
                 <p>
-                    <label for="name">Which day is best?</label>
-                    <input type="date" id="day" name="best_day" required>
+                    <label for="day">Which day is best?</label>
+                    <input type="date" id="day" name="best_day">
                 </p>
                 <p>
-                    <label for="best_bear">Which bear is best? <span aria-hidden="true">*</span></label>
+                    <label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
                     <select id="best_bear" name="best_bear" required>
-                        <option value="">&nbsp;</option>
+                        <option value="" selected>&nbsp;</option>
                         <option value="black">Black</option>
                         <option value="brown">Brown</option>
                         <option value="care">Care</option>
